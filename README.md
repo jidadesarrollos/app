@@ -9,7 +9,7 @@ Para instalar una web básica con Jida Framework se deben seguir los siguientes 
 1. Clonar el repositorio del esqueleto básico de una web para Jida Framework. Para ello debemos ingresar desde la consola, ubicándonos en el directorio donde queremos clonar el repositorio, y aplicar el siguiente comando:
 
     ```
-    $ git clone https://[usuario-bitbucket]@bitbucket.org/jidadesarrollos/jidaweb.git [nombre-proyecto]
+    $ git clone https://github.com/jidadesarrollos/app.git [nombre-proyecto]
     ```
 
     Nota: [nombre-proyecto] es el nombre del directorio donde se va a clonar el repositorio. Se debe colocar el nombre del proyecto o sitio web que se va a desarrollar.
@@ -17,7 +17,7 @@ Para instalar una web básica con Jida Framework se deben seguir los siguientes 
 2. Una vez clonado el repositorio del esqueleto básico de una web, procedemos a clonar el repositorio del framework. Para ello debemos ingresar en el directorio que acabamos de crear, y desde la consola debemos ejecutar el siguiente comando:
 
     ```
-    $ git clone https://[usuario-bitbucket]@bitbucket.org/jidadesarrollos/jidaframework.git Framework
+    $ git clone https://github.com/jidadesarrollos/jida.git Framework
 	```
 
     Nota: se debe clonar en el directorio “Framework” ya que según la estructura del sitio web, es en ese directorio donde van a estar alojados los archivos del core del framework.
