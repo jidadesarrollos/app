@@ -12,13 +12,5 @@
   ],
   "require": {
     "jida/framework": "dev-bootstrap-julio"
-  },
-  "scripts": {
-    "post-install-cmd": [
-      "composer install"
-    ],
-    "post-update-cmd": [
-      "composer install"
-    ]
   }
 }
