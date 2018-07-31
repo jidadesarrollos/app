@@ -13,6 +13,7 @@ $archivo = $ruta . 'inicio.php';
 
 include_once $archivo;
 
+
 $path = \Jida\Manager\Estructura::path();
 
 include_once $path . '/Aplicacion/index.php';
