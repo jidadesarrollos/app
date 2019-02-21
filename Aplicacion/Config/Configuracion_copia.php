@@ -12,7 +12,6 @@ class Configuracion extends Config {
 
     const URL_BASE = '';
     const URL_ABSOLUTA = '';
-    const PATH_JIDA = "Framework";
 
     const ENVIAR_EMAIL_ERROR = false;
     const EMAIL_SOPORTE = 'jcontreras@jidadesarrollos.com';
