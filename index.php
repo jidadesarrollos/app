@@ -1,19 +1,8 @@
 <?php
 
-$ruta = "./vendor/Jida/";
-$ruta = "./Framework/";
+define('DIR_JF', __DIR__);
 
-define('DIR_JF', $ruta);
+include_once 'vendor/autoload.php';
 
-if (!file_exists($ruta . 'inicio.php')) {
-    exit("No se encuentra el directorio de Jida para inicializar la aplicación :" . $ruta);
-}
-
-$archivo = $ruta . 'inicio.php';
-
-include_once $archivo;
-
-
-$path = \Jida\Manager\Estructura::path();
-
-include_once $path . '/Aplicacion/index.php';
+$jida = new Jida\Manager(__DIR__);
+$jida->inicio();

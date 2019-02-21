@@ -1,6 +1,6 @@
 {
   "name": "jida/app",
-  "description": "Plantilla basica para el desarrollo de aplicaciones en entorno web con Jida Framework",
+  "description": "Configuracion de aplicación web para Jida Framework",
   "type": "project",
   "license": "mit",
   "version": "0.1",
@@ -8,9 +8,27 @@
     {
       "name": "rrodriguez",
       "email": "rrodriguez@jidadesarrollos.com"
+    },
+    {
+      "name": "jrodriguez",
+      "email": "jrodriguez@jidadesarrollos.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/jidadesarrollos/jida",
+      "name": "jida/jida"
     }
   ],
   "require": {
-    "jida/framework": "dev-bootstrap-julio"
+    "jida/jida": "dev-desarrollo"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": [
+        "./Aplicacion/"
+      ]
+    }
   }
 }
