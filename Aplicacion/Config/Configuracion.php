@@ -20,10 +20,6 @@ class Configuracion extends Config {
     ];
 
     static $modulos = [
-        'Banner',
-        'Categorias',
-        'Proyectos',
-        'Sendy'
     ];
 
     var $logo = 'default/htdocs/img/logo.png';
