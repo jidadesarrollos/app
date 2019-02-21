@@ -34,7 +34,7 @@
 
     <?= $contenido ?>
 
-    <?= $this->incluirLayout('elementos/footer') ?>
+    <?= $this->incluir('elementos/footer') ?>
 
 </div>
 <?= $this->imprimirLibrerias('js'); ?>

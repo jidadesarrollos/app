@@ -3,7 +3,6 @@
   "description": "Configuracion de aplicación web para Jida Framework",
   "type": "project",
   "license": "mit",
-  "version": "0.1",
   "authors": [
     {
       "name": "rrodriguez",
