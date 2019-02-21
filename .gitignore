@@ -5,3 +5,4 @@ bower_components
 /Framework
 /vendor
 /error.log
+/composer.lock
