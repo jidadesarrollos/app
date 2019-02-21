@@ -13,18 +13,18 @@ class Configuracion extends Config {
     const ENVIAR_EMAIL_ERROR = false;
     const EMAIL_SOPORTE = 'soporte@jidadesarrollos.com';
 
-    var $tema = 'default';
+    public $tema = 'default';
 
-    var $idiomas = [
+    public $idiomas = [
         'es' => 'Español'
     ];
 
     static $modulos = [
     ];
 
-    var $logo = 'default/htdocs/img/logo.png';
+    public $logo = 'default/htdocs/img/logo.png';
 
-    var $mensajes = [
+    public $mensajes = [
         'error'  => 'alert alert-danger',
         'suceso' => 'alert alert-success',
         'alert'  => 'alert alert-warning',
@@ -46,11 +46,7 @@ class Configuracion extends Config {
                 'configuracion' => $this->tema
             ]);
 
-        /**
-         * @deprecated 0.6
-         */
-        $GLOBALS['Configuracion'] = $this;
-        $this->modulos['app'] = 'app';
+        self::$modulos['app'] = 'app';
 
         /**
          * @since 0.6

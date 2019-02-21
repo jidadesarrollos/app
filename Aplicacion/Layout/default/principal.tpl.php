@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?= $this->nombreApp; ?></title>
     <?= $this->imprimirMeta(); ?>
-    <?= $this->imprimirLibrerias('css'); ?>
+    <?= $this->imprimirLibrerias('css', 'default'); ?>
 </head>
 <body>
 <div class="container">
@@ -15,6 +15,6 @@
     <?= $contenido ?>
     <?= $this->incluir('elementos/footer') ?>
 </div>
-<?= $this->imprimirLibrerias('js'); ?>
+<?= $this->imprimirLibrerias('js', 'default'); ?>
 </body>
 </html>

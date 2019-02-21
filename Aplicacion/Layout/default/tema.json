@@ -6,10 +6,16 @@
   "layoutError": "error",
   "dev": {
     "css": {
-      "principal": "{tema}/htdocs/css/principal.css"
+      "default": {
+        "bt": "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+        "principal": "{tema}/htdocs/css/principal.css"
+      }
     },
     "js": {
-      "principal": "{tema}/htdocs/js/principal.js"
+      "default": {
+        "bt": "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js",
+        "principal": "{tema}/htdocs/js/principal.js"
+      }
     }
   },
   "prod": {

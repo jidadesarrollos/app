@@ -7,16 +7,16 @@
 
 namespace App\Controllers;
 
-use Jida\Core\Controller;
+use Jida\Core\Controlador\Control;
 use App\Config\Configuracion;
 
-class App extends Controller {
+class App extends Control {
 
     function __construct() {
 
         parent::__construct();
 
-        $this->layout('principal.tpl.php');
+        $this->layout('principal');
 
         $this->data([
             'nombreApp' => Configuracion::NOMBRE_APP,
