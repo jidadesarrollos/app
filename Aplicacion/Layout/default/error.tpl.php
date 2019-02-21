@@ -6,15 +6,10 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?= $this->nombreApp; ?></title>
-    <?= $this->imprimirMeta(); ?>
-    <?= $this->imprimirLibrerias('css'); ?>
 </head>
 <body>
 <div class="container">
-    <?= $this->incluir('elementos/header') ?>
     <?= $contenido ?>
-    <?= $this->incluir('elementos/footer') ?>
 </div>
-<?= $this->imprimirLibrerias('js'); ?>
 </body>
 </html>

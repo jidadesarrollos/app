@@ -7,17 +7,22 @@
 
 namespace App\Controllers;
 
-use Jida\Componentes\Traductor;
-use Jida\Helpers\Debug;
+use Jida\Core\Controller;
+use App\Config\Configuracion;
 
-class App extends \Jida\Core\Controller {
+class App extends Controller {
 
     function __construct() {
 
         parent::__construct();
 
         $this->layout('principal.tpl.php');
-        
+
+        $this->data([
+            'nombreApp' => Configuracion::NOMBRE_APP,
+            'urlBase'   => Configuracion::URL_BASE
+        ]);
+
     }
 
 }

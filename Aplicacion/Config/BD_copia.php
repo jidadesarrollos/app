@@ -13,7 +13,7 @@ class BD {
         'puerto'   => "3306",
         'usuario'  => 'root',
         'clave'    => '123456',
-        'bd'       => 'jidaapp',
+        'bd'       => 'app',
         'servidor' => '127.0.0.1',
     ];
 }

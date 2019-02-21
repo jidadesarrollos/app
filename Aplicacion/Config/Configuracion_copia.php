@@ -6,15 +6,27 @@ use Jida\Configuracion\Config;
 
 class Configuracion extends Config {
 
-    var $logo = 'default/htdocs/images/logo.png';
-
     const NOMBRE_APP = 'Aplicación Jida';
-
+    const ENTORNO_APP = 'dev';
     const URL_BASE = '';
     const URL_ABSOLUTA = '';
-
     const ENVIAR_EMAIL_ERROR = false;
-    const EMAIL_SOPORTE = 'jcontreras@jidadesarrollos.com';
+    const EMAIL_SOPORTE = 'soporte@jidadesarrollos.com';
+
+    var $tema = 'default';
+
+    var $idiomas = [
+        'es' => 'Español'
+    ];
+
+    static $modulos = [
+        'Banner',
+        'Categorias',
+        'Proyectos',
+        'Sendy'
+    ];
+
+    var $logo = 'default/htdocs/img/logo.png';
 
     var $mensajes = [
         'error'  => 'alert alert-danger',
@@ -23,19 +35,20 @@ class Configuracion extends Config {
         'info'   => 'alert alert-info'
     ];
 
-    var $tema = 'default';
-
-    var $idiomas = [
-        'es' => 'Español'
+    const REDIMENSION_IMAGEN = [
+        '150x150',
+        '400x400',
+        '800x800',
+        '1200x1200'
     ];
 
-    function __construct () {
+    function __construct() {
 
         $this->definir('configMensajes', $this->mensajes);
         $this->definir('tema',
-                       [
-                           'configuracion' => $this->tema
-                       ]);
+            [
+                'configuracion' => $this->tema
+            ]);
 
         /**
          * @deprecated 0.6
@@ -50,23 +63,17 @@ class Configuracion extends Config {
 
     }
 
-    private function definir ($variable, $valor) {
+    private function definir($variable, $valor) {
 
         $GLOBALS[$variable] = $valor;
 
     }
 
-    public function inicio () {
-
-        $GLOBALS['_CSS'] = \App\Config\Cliente\CSS::archivos();
-        $GLOBALS['_JS'] = \App\Config\Cliente\JS::archivos();
-        $GLOBALS['configJVista'] = [
-            'nroFilas' => 5,
-        ];
+    public function inicio() {
 
     }
 
-    static function obtener () {
+    static function obtener() {
 
     }
 
