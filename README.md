@@ -3,5 +3,5 @@
 
 ## Instalación
 ```
-composer create-project --prefer-dist jida/app app-test
+composer create-project --prefer-dist jida/app nombre-app
 ```
