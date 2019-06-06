@@ -7,7 +7,7 @@ Para empezar, haremos un fork o clone del repositorio para aplicaciones de jida
 Luego de la clonación, debemos realizar los siguientes pasos:
 
 - `composer install`
-- Instalaremos el backup de la base de dats ubicado en  `BD/app.sql`
+- Instalaremos el backup de la base de datos ubicado en  `BD/app.sql`
 - Adentro del repositorio, dirigirnos a `Aplicacion\Config` y renombrar el archivo
    BD_copia.php como 'BD.php', luego acceder a el y configurar el acceso a base de datos. 
    el key 'bd' dentro del arreglo default, corresponde al nombre de base de datos, debe ser
