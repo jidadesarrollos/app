@@ -147,7 +147,7 @@ Dicho modelo debe estar ubicado en el directorio "Modelos" dentro de modulo. El 
 
 ## Controlador de modulo Usuarios
 
-Ya con el formulario creado, procedemos a instanciarlo, para ello debemos modificar el Controlador principal del modulo.
+Ya con el formulario y modelo creados, procedemos a instanciarlos, para ello debemos modificar el Controlador principal del modulo.
 `App\Modulos\Controllers\Usuarios` en el metodo index.
 
 ```php
