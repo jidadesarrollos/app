@@ -101,7 +101,8 @@ los formularios a partir de un archivo `.json`. Por tanto, para crear el formula
       "label": "Clave",
       "eventos": [
         "obligatorio"
-      ]
+      ],
+      "type": "password"
     },
     {
       "name": "clave_2",
@@ -109,7 +110,8 @@ los formularios a partir de un archivo `.json`. Por tanto, para crear el formula
       "label": "Repetir Clave",
       "eventos": [
         "obligatorio"
-      ]
+      ],
+      "type": "password"
     }
   ]
 }
