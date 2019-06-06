@@ -64,6 +64,11 @@ los formularios a partir de un archivo `.json`. Por tanto, para crear el formula
       "label": "Nombres"
     },
     {
+      "name": "apellidos",
+      "id": "apellidos",
+      "label": "Apellidos"
+    },
+    {
       "name": "correo",
       "type": "email",
       "id": "correo",
@@ -83,25 +88,20 @@ los formularios a partir de un archivo `.json`. Por tanto, para crear el formula
       "label": "Nombre de usuario"
     },
     {
-      "name": "clave_usuario",
-      "id": "clave_usuario",
+      "name": "clave",
+      "id": "clave",
       "label": "Clave",
       "eventos": [
         "obligatorio"
       ]
     },
     {
-      "name": "clave_usuario_2",
-      "id": "clave_usuario_2",
-      "label": "Clave",
+      "name": "clave_2",
+      "id": "clave_2",
+      "label": "Repetir Clave",
       "eventos": [
         "obligatorio"
       ]
-    },
-    {
-      "name": "apellidos",
-      "id": "apellidos",
-      "label": "Apellidos"
     }
   ]
 }
@@ -124,18 +124,10 @@ class Usuario extends Modelo {
     public $id_usuario;
     public $usuario;
     public $clave;
-
     public $nombres;
     public $apellidos;
     public $correo;
     public $sexo;
-
-    public $activo;
-    public $id_estatus;
-    public $ultima_sesion;
-    public $validacion;
-    public $codigo_recuperacion;
-    public $img_perfil;
 
     protected $tablaBD = "s_usuarios";
     protected $pk = "id_usuario";
