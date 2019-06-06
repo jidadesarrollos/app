@@ -13,7 +13,9 @@
     },
     "js": {
       "default": {
+        "jquery": "https://code.jquery.com/jquery-3.4.1.min.js",
         "bt": "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js",
+        "jd": "{base}/htdocs/js/jd.plugs.js",
         "principal": "{tema}/htdocs/js/principal.js"
       }
     }
