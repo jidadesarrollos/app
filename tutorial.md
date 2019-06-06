@@ -57,16 +57,24 @@ los formularios a partir de un archivo `.json`. Por tanto, para crear el formula
 {
   "nombre": "Gestion Usuarios",
   "identificador": "GestionUsuarios",
+  "query": "select usuario, clave, nombres, apellidos, correo, sexo from s_usuarios",
+  "clave_primaria": "id_usuario",
   "campos": [
     {
       "name": "nombres",
       "id": "nombres",
-      "label": "Nombres"
+      "label": "Nombres",
+      "eventos": [
+        "obligatorio"
+      ]
     },
     {
       "name": "apellidos",
       "id": "apellidos",
-      "label": "Apellidos"
+      "label": "Apellidos",
+      "eventos": [
+        "obligatorio"
+      ]
     },
     {
       "name": "correo",
@@ -105,7 +113,6 @@ los formularios a partir de un archivo `.json`. Por tanto, para crear el formula
     }
   ]
 }
-
 ```
 > Nota: el formulario habria quedado en la siguiente ubicación: `App\Modulos\Usuarios\Formularios\Registro.json`;
 
