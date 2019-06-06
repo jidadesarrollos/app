@@ -522,12 +522,12 @@ CREATE TABLE `s_posts` (
 
 CREATE TABLE `s_usuarios` (
   `id_usuario` int(11) NOT NULL,
-  `nombre_usuario` varchar(100) NOT NULL,
-  `clave_usuario` varchar(50) NOT NULL,
+  `usuario` varchar(100) NOT NULL,
+  `clave` varchar(50) NOT NULL,
   `identificador` varchar(100) DEFAULT NULL,
   `activo` tinyint(1) DEFAULT NULL,
   `id_estatus` int(11) NOT NULL,
-  `ultima_session` datetime DEFAULT NULL,
+  `ultima_sesion` datetime DEFAULT NULL,
   `validacion` varchar(500) DEFAULT NULL,
   `nombres` varchar(100) DEFAULT NULL,
   `apellidos` varchar(100) DEFAULT NULL,
@@ -545,7 +545,7 @@ CREATE TABLE `s_usuarios` (
 -- Volcado de datos para la tabla `s_usuarios`
 --
 
-INSERT INTO `s_usuarios` (`id_usuario`, `nombre_usuario`, `clave_usuario`, `identificador`, `activo`, `id_estatus`, `ultima_session`, `validacion`, `nombres`, `apellidos`, `correo`, `codigo_recuperacion`, `sexo`, `img_perfil`, `fecha_creacion`, `fecha_modificacion`, `id_usuario_creador`, `id_usuario_modificador`) VALUES
+INSERT INTO `s_usuarios` (`id_usuario`, `usuario`, `clave`, `identificador`, `activo`, `id_estatus`, `ultima_sesion`, `validacion`, `nombres`, `apellidos`, `correo`, `codigo_recuperacion`, `sexo`, `img_perfil`, `fecha_creacion`, `fecha_modificacion`, `id_usuario_creador`, `id_usuario_modificador`) VALUES
 (1, 'jadmin', '3711be79067177199efb2589054a6894', NULL, 1, 1, '2017-02-26 09:22:50', '1', NULL, NULL, NULL, NULL, NULL, NULL, '2014-02-13 13:01:12', NULL, NULL, NULL),
 (2, 'jeanpierre', 'e10adc3949ba59abbe56e057f20f883e', NULL, 1, 1, NULL, '1', NULL, NULL, 'jeacontreras2009@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (3, 'felix', 'e10adc3949ba59abbe56e057f20f883e', NULL, 1, 1, NULL, '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
