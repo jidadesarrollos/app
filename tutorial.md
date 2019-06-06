@@ -109,6 +109,44 @@ los formularios a partir de un archivo `.json`. Por tanto, para crear el formula
 ```
 > Nota: el formulario habria quedado en la siguiente ubicación: `App\Modulos\Usuarios\Formularios\Registro.json`;
 
+## Modelo de Usuario
+
+Para poder acceder a las propiedades de la base de datos, debemos crear un modelo con la siguiente estructura:
+
+```php
+
+namespace App\Modulos\Usuarios\Modelos;
+
+use Jida\Core\Modelo;
+
+class Usuario extends Modelo {
+
+    public $id_usuario;
+    public $usuario;
+    public $clave;
+
+    public $nombres;
+    public $apellidos;
+    public $correo;
+    public $sexo;
+
+    public $activo;
+    public $id_estatus;
+    public $ultima_sesion;
+    public $validacion;
+    public $codigo_recuperacion;
+    public $img_perfil;
+
+    protected $tablaBD = "s_usuarios";
+    protected $pk = "id_usuario";
+
+}
+```
+
+Dicho modelo debe estar ubicado en el directorio "Modelos" dentro de modulo. El modelo debe ser nombrado en singular, por ejemplo: Usuario.php. Este contiene propiedades que deben tener el mismo nombre de los campos de la tabla en la base de datos, exceptuando los campos por defecto de cada tabla que son "fecha_creacion", "fecha_modificacion", "id_usuario_creador" y "id_usuario_modificador".
+
+## Controlador de modulo Usuarios
+
 Ya con el formulario creado, procedemos a instanciarlo, para ello debemos modificar el Controlador principal del modulo.
 `App\Modulos\Controllers\Usuarios` en el metodo index.
 
@@ -144,7 +182,3 @@ class Usuarios extends App {
 
 ```
 
-
-
-
-   
