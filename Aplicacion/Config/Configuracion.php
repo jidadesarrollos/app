@@ -20,7 +20,6 @@ class Configuracion extends Config {
     ];
 
     static $modulos = [
-        'Usuarios'
     ];
 
     public $logo = 'default/htdocs/img/logo.png';
