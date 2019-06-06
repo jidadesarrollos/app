@@ -114,6 +114,37 @@ los formularios a partir de un archivo `.json`. Por tanto, para crear el formula
 Ya con el formulario creado, procedemos a instanciarlo, para ello debemos modificar el Controlador principal del modulo.
 `App\Modulos\Controllers\Usuarios` en el metodo index.
 
+```php
+class Usuarios extends App {
+
+    public function index() {
+
+        $form = new Formulario('usuarios/registro');
+
+        $this->data(['form' => $form->render()]);
+
+        if ($this->post('btnRegistro')) {
+            $this->procesarRegistro($form);
+            return;
+        }
+
+    }
+
+    public function procesarRegistro(Formulario $form) {
+
+        if (!$form->validar()) {
+            return;
+        }
+
+        $usuario = new Usuario();
+        if ($usuario->salvar($this->post())) {
+
+        }
+    }
+
+}
+
+```
 
 
 
