@@ -57,8 +57,6 @@ los formularios a partir de un archivo `.json`. Por tanto, para crear el formula
 {
   "nombre": "Gestion Usuarios",
   "identificador": "GestionUsuarios",
-  "query": "select nombre_usuario,clave_usuario,nombres,apellidos,correo,sexo,img_perfil from s_usuarios",
-  "clave_primaria": "id_usuario",
   "campos": [
     {
       "name": "nombres",

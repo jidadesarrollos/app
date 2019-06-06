@@ -6,4 +6,4 @@
 composer create-project --prefer-dist jida/app nombre-app
 
 ```
-[Tutorial](turorial.md)
+[Tutorial](tutorial.md)
