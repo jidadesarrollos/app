@@ -183,7 +183,7 @@ class Usuarios extends App {
 
 ## Vista del método index
 
-Para visualizar el formulario se debe crear un archivo en la carpeta Vistas con el nombre del método correspondiente. En esta caso quedaría en la siguiente ruta `App\Modulos\Vistas\usuarios\index.php`. Desde ese archivo vamos a proceder a imprimir el formulario que se envía renderizado desde el controlador:
+Para visualizar el formulario se debe crear un archivo en la carpeta Vistas con el nombre del método correspondiente. En esta caso quedaría en la siguiente ruta `App\Modulos\Usuarios\Vistas\usuarios\index.php`. Desde ese archivo vamos a proceder a imprimir el formulario que se envía renderizado desde el controlador:
 
 ```php
 echo $this->form;
