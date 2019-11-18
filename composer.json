@@ -27,8 +27,8 @@
     }
   ],
   "require": {
-    "jida/jida": "dev-desarrollo",
-    "jida/jadmin": "dev-desarrollo",
+    "jida/jida": "dev-dev",
+    "jida/jadmin": "dev-dev",
     "jida/render": "dev-master"
   },
   "autoload": {
