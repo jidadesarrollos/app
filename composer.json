@@ -1,6 +1,6 @@
 {
   "name": "jida/app",
-  "description": "Configuracion de aplicación web para Jida Framework",
+  "description": "Aplicación web base con jida Framework",
   "type": "project",
   "license": "mit",
   "authors": [
